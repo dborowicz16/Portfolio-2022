@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+    position: relative;
+}
+
+.text{
+    color: white;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+}
+
+.layer1 {
+    background-image: url(../public/waves.svg)
+}
