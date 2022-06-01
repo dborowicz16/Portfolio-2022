@@ -175,7 +175,7 @@ export default function Home() {
           <div className="flex flex-col">
             <div className="relative h-[190px] w-[190px] mb-5 self-center">
               <Image
-                src="/squircle.svg"
+                src="/squircleSwift.svg"
                 layout="fill"
               />
             </div>
@@ -183,14 +183,10 @@ export default function Home() {
               with no delay in load times.</h1>
           </div>
 
-          <h1 className="absolute text-3xl z-10 text-white right-40 -translate-y-[17rem] md:left-[5.5rem] md:translate-x-4 md:translate-y-20 lg:left-52 lg:translate-x-4 lg:translate-y-20">Swift</h1>
-          <h1 className="absolute text-3xl z-10 text-white right-[7.5rem] translate-y-20 md:translate-y-20 md:right-1/2 md:translate-x-20">Responsive</h1>
-          <h1 className="absolute text-3xl z-10 text-white right-[8.5rem] translate-y-[27rem] md:right-20 md:translate-x-2 md:translate-y-20 lg:right-48 lg:translate-y-20">Beautiful</h1>
-
           <div className="flex flex-col">
             <div className="relative h-[190px] w-[190px] mb-5 self-center">
               <Image
-                src="/squircle.svg"
+                src="/squircleResponsive.svg"
                 layout="fill"
               />
             </div>
@@ -201,7 +197,7 @@ export default function Home() {
           <div className="flex flex-col">
             <div className="relative h-[190px] w-[190px] mb-5 self-center">
               <Image
-                src="/squircle.svg"
+                src="/squircleBeautiful.svg"
                 layout="fill"
               />
             </div>

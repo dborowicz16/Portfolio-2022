@@ -1,0 +1,18 @@
+<svg viewbox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <path d="
+                M 0, 72
+                C 0, 0 0, 0 72, 0
+                S 144, 0 144, 72
+                    144, 144 72, 144
+                    0, 144 0, 72
+            " fill="#363E4D" transform="rotate(
+                45,
+                100,
+                100
+            ) translate(
+                28
+                28
+            )"/>
+
+  <text x="53%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="30px">Responsive</text> 
+</svg>
