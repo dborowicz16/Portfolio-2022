@@ -120,7 +120,8 @@ export default function Home() {
                 },
                 "size": {
                   "random": {
-                    "enable": true
+                    "enable": true,
+                    "minimumValue": 1
                   },
                   "value": {
                     "min": 1,
