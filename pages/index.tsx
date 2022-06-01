@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Particles from "react-tsparticles";
 import { useForm, ValidationError } from '@formspree/react';
-import Image from 'next/Image';
+import Image from 'next/image';
 
 
 export default function Home() {
