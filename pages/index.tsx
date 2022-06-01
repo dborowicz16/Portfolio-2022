@@ -22,7 +22,7 @@ export default function Home() {
 
     <>
 
-      <div className="wrapper flex items-center justify-center h-screen">
+      <div className="wrapper flex items-center justify-center h-screen w-full">
 
         <div>
           <Particles
@@ -138,7 +138,7 @@ export default function Home() {
 
           />
 
-          <div className="flex-wrap md:mx-80">
+          <div className="flex flex-col flex-wrap md:self-center lg:mx-80">
             <h1 className="text-white text-center text-2xl md:text-6xl">My name is <span className="text-[#00fdff]">David Borowicz</span>. Welcome to my website!</h1>
           </div>
 
@@ -147,18 +147,18 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center bg-zinc-200 border-black border-t-[20px] p-10">
+      <div className="flex flex-col w-full items-center justify-center bg-zinc-200 border-black border-t-[20px] pb-10">
         <h1 className="text-5xl mb-7">About Me</h1>
         <img className="h-96" src="grey-headshot.png" />
-        <h1 className="mx-80 text-xl text-center">I am a software engineer who graduated from Grand Valley State University with
+        <h1 className="self-center text-xl text-center mx-5 lg:w-2/4">I am a software engineer who graduated from Grand Valley State University with
           a degree in computer information systems. I love to work on programming projects of all sorts however my current field of expertise
-          is front end web development. I am currenty looking for any opportunity to grow my skills no matter how big or small!</h1>
+          is front end web development. I am looking for any opportunity to grow my skills no matter how big or small!</h1>
       </div>
 
-      <div className="flex items-center justify-center bg-zinc-200 pb-10">
+      <div className="flex items-center justify-center bg-zinc-200 py-10">
         <a href='https://www.linkedin.com/in/david-borowicz-95315814b/' target="_blank" className="bg-black hover:bg-black/50 text-white font-bold mx-4 py-2 px-4 rounded-full">LinkedIn</a>
         <a href='https://github.com/dborowicz16' target="_blank" className="bg-black hover:bg-black/50 text-white font-bold mx-4 py-2 px-4 rounded-full">GitHub</a>
-        <a href='https://i.imgur.com/26KnNr8.jpg' target="_blank" className="bg-black hover:bg-black/50 text-white font-bold mx-4 py-2 px-4 rounded-full">Resume</a>
+        <a href='/resume.pdf' target="_blank" className="bg-black hover:bg-black/50 text-white font-bold mx-4 py-2 px-4 rounded-full">Resume</a>
       </div>
 
       <div>
@@ -168,9 +168,9 @@ export default function Home() {
       <div className="flex flex-col bg-zinc-200 pb-10">
         <h1 className="text-5xl self-center mb-10">Skills</h1>
 
-        <div className="flex flex-row justify-around">
+        <div className="md:flex md:flex-row md:justify-around">
           <div className="flex flex-col">
-            <div className="relative h-[190px] w-[190px] mb-5">
+            <div className="relative h-[190px] w-[190px] mb-5 self-center">
               <Image
                 src="/squircle.svg"
                 layout="fill"
@@ -180,12 +180,12 @@ export default function Home() {
               with no delay in load times.</h1>
           </div>
 
-          <h1 className="absolute text-3xl z-10 text-white left-52 translate-x-4 translate-y-20">Swift</h1>
-          <h1 className="absolute text-3xl z-10 text-white translate-y-20 translate-x-1">Responsive</h1>
-          <h1 className="absolute text-3xl z-10 text-white right-48 translate-y-20">Beautiful</h1>
+          <h1 className="absolute text-3xl z-10 text-white right-40 -translate-y-[17rem] md:left-[5.5rem] md:translate-x-4 md:translate-y-20 lg:left-52 lg:translate-x-4 lg:translate-y-20">Swift</h1>
+          <h1 className="absolute text-3xl z-10 text-white right-[7.5rem] translate-y-20 md:translate-y-20 md:right-1/2 md:translate-x-20">Responsive</h1>
+          <h1 className="absolute text-3xl z-10 text-white right-[8.5rem] translate-y-[27rem] md:right-20 md:translate-x-2 md:translate-y-20 lg:right-48 lg:translate-y-20">Beautiful</h1>
 
           <div className="flex flex-col">
-            <div className="relative h-[190px] w-[190px] mb-5">
+            <div className="relative h-[190px] w-[190px] mb-5 self-center">
               <Image
                 src="/squircle.svg"
                 layout="fill"
@@ -196,25 +196,213 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col">
-            <div className="relative h-[190px] w-[190px] mb-5">
+            <div className="relative h-[190px] w-[190px] mb-5 self-center">
               <Image
                 src="/squircle.svg"
                 layout="fill"
               />
             </div>
-            <h1 className="self-center w-48 text-center text-lg">Make a good first impression with potential customers by having a beautifully
+            <h1 className="self-center w-48 text-center text-lg mb-20 md:mb-5">Make a good first impression with potential customers by having a beautifully
               designed website!</h1>
           </div>
         </div>
 
-        <div className="relative h-[500px] w-[500px] my-5">
-          <Image
-            src="/skillsWheel.svg"
-            layout="fill"
-          />
+        {/* MOBILE VIEWPORT */}
+        <div className="md:hidden flex flex-row justify-around">
+          <div className="flex flex-col gap-5">
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/reactLogo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">React JS</h1>
+
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/nextjsLogo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">Next JS</h1>
+
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/html5Logo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">HTML</h1>
+
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/cssLogo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">CSS</h1>
+
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/javascriptLogo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">Javascript</h1>
+
+          </div>
+
+          <div className="flex flex-col gap-5">
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/bootstrapLogo.svg"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">Bootstrap</h1>
+
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/tailwindCSS.svg"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">Tailwind CSS</h1>
+
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/githubLogo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">Github</h1>
+
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/pythonLogo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">Python</h1>
+
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/MsTeamsLogo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">Microsoft Teams</h1>
+
+          </div>
         </div>
 
+        {/* TABLET/COMPUTER VIEWPORT */}
+        <div className="hidden md:flex md:flex-row md:justify-around md:mt-20 md:mb-10">
+          <div className="flex flex-col">
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/reactLogo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">React JS</h1>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/nextjsLogo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">Next JS</h1>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/html5Logo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">HTML</h1>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/cssLogo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">CSS</h1>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/javascriptLogo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">Javascript</h1>
+          </div>
+        </div>
+
+
+        <div className="hidden md:flex md:flex-row md:justify-around">
+          <div className="flex flex-col">
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/bootstrapLogo.svg"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">Bootstrap</h1>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/tailwindCSS.svg"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">Tailwind CSS</h1>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/githubLogo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">Github</h1>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/pythonLogo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">Python</h1>
+          </div>
+
+          <div className="flex flex-col">
+            <div className="relative h-[100px] w-[100px] self-center">
+              <Image
+                src="/MsTeamsLogo.png"
+                layout="fill"
+              />
+            </div>
+            <h1 className="self-center">Microsoft Teams</h1>
+          </div>
+        </div>
       </div>
+
 
       <div>
         <img className="w-full h-auto bg-contain" src="../waves.svg" />
@@ -226,8 +414,8 @@ export default function Home() {
 
       <div className="flex items-center justify-center bg-zinc-200 pb-10">
         <form onSubmit={handleSubmit} className="w-full max-w-lg">
-          <div className="flex flex-wrap -mx-3 mb-6">
-            <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
+          <div className="flex flex-wrap mb-6">
+            <div className="md:w-1/2 px-3 mb-6 md:mb-0">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 First Name
               </label>
@@ -240,7 +428,7 @@ export default function Home() {
               <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-last-name" type="text" placeholder="Doe" />
             </div>
           </div>
-          <div className="flex flex-wrap -mx-3 mb-6">
+          <div className="flex flex-wrap mb-6">
             <div className="w-full px-3">
               <label htmlFor="email" className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 E-mail
@@ -249,7 +437,7 @@ export default function Home() {
               <ValidationError prefix="Email" field="email" errors={state.errors} />
             </div>
           </div>
-          <div className="flex flex-wrap -mx-3 mb-6">
+          <div className="flex flex-wrap mb-6">
             <div className="w-full px-3">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
                 Message
@@ -260,7 +448,7 @@ export default function Home() {
           </div>
           <div className="md:flex md:items-center">
             <div className="md:w-1/3">
-              <button type="submit" disabled={state.submitting} className="bg-black hover:bg-black/50 text-white font-bold py-2 px-4 rounded-full">
+              <button type="submit" disabled={state.submitting} className="bg-black hover:bg-black/50 text-white font-bold py-2 px-4 rounded-full self-center">
                 Send
               </button>
               <ValidationError errors={state.errors} />
