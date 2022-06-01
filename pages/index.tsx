@@ -105,7 +105,8 @@ export default function Home() {
                 },
                 "opacity": {
                   "random": {
-                    "enable": true
+                    "enable": true,
+                    "minimumValue": 0.1
                   },
                   "value": {
                     "min": 0,
