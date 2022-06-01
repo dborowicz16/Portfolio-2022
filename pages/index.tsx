@@ -88,6 +88,7 @@ export default function Home() {
                   },
                   "enable": true,
                   "outModes": {
+                    "default": "out",
                     "bottom": "out",
                     "left": "out",
                     "right": "out",
