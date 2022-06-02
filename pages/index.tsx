@@ -11,7 +11,7 @@ export default function Home() {
   const [hideText, showText] = useState("")
 
   function displayText() {
-    showText("Form submitted! Thank you!")
+    showText("Thank you for your submission!")
     
   }
 
@@ -453,16 +453,12 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <div className="">
               <button type="submit" disabled={state.submitting} onClick={displayText} className="bg-black hover:bg-black/50 text-white font-bold py-2 px-4 rounded-full self-center">
                 Send
               </button>
+              <h1 className="self-center">{hideText}</h1>
               <ValidationError errors={state.errors} />
             </div>
-            <div className="flex flex-col">
-              <h1 className="self-center">{hideText}</h1>
-            </div>
-          </div>
         </form>
       </div>
 
