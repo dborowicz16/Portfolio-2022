@@ -2,11 +2,18 @@ import Head from 'next/head'
 import Particles from "react-tsparticles";
 import { useForm, ValidationError } from '@formspree/react';
 import Image from 'next/image';
+import React, { useState } from 'react';
 
 
 export default function Home() {
 
   const [state, handleSubmit] = useForm("xbjwgabz");
+  const [hideText, showText] = useState("")
+
+  function displayText() {
+    showText("Form submitted! Thank you!")
+    
+  }
 
   const particlesInit = (main: any) => {
     console.log(main);
@@ -151,7 +158,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col w-full items-center justify-center bg-zinc-200 border-black border-t-[20px] pb-10">
-        <h1 className="text-5xl mb-7">About Me</h1>
+        <h1 className="text-5xl my-10">About Me</h1>
         <img className="h-96" src="grey-headshot.png" />
         <h1 className="self-center text-xl text-center mx-5 lg:w-2/4">I am a software engineer who graduated from Grand Valley State University with
           a degree in computer information systems. I love to work on programming projects of all sorts however my current field of expertise
@@ -412,7 +419,7 @@ export default function Home() {
       </div>
 
       <div className="flex items-center justify-center bg-zinc-200 pb-10">
-        <form onSubmit={handleSubmit} className="w-full max-w-lg">
+        <form onSubmit={handleSubmit} className="w-full max-w-lg ">
           <div className="flex flex-wrap mb-6">
             <div className="md:w-1/2 px-3 mb-6 md:mb-0">
               <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
@@ -446,13 +453,15 @@ export default function Home() {
             </div>
           </div>
           <div className="flex flex-col items-center">
-            <div className="md:w-1/3">
-              <button type="submit" disabled={state.submitting} className="bg-black hover:bg-black/50 text-white font-bold py-2 px-4 rounded-full self-center">
+            <div className="">
+              <button type="submit" disabled={state.submitting} onClick={displayText} className="bg-black hover:bg-black/50 text-white font-bold py-2 px-4 rounded-full self-center">
                 Send
               </button>
               <ValidationError errors={state.errors} />
             </div>
-            <div className="md:w-2/3"></div>
+            <div className="flex flex-col">
+              <h1 className="self-center">{hideText}</h1>
+            </div>
           </div>
         </form>
       </div>
