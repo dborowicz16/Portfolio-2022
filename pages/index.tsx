@@ -186,8 +186,8 @@ export default function Home() {
                 layout="fill"
               />
             </div>
-            <h1 className="self-center w-48 text-center text-lg">It is of the outmost importance to me that all websites I build display seamlessly
-              with no delay in load times.</h1>
+            <h1 className="self-center w-48 text-center text-lg">It is of the utmost importance to me that all websites I build render as 
+            seamlessly as possible.</h1>
           </div>
 
           <div className="flex flex-col">
