@@ -12,13 +12,11 @@ export default function Home() {
 
   function displayText() {
     showText("Thank you for your submission!")
-    
   }
 
+  
   const particlesInit = (main: any) => {
     console.log(main);
-
-    // you can initialize the tsParticles instance (main) here, adding custom shapes or presets
   };
 
   const particlesLoaded = (container: any) => {
@@ -142,10 +140,6 @@ export default function Home() {
               }
             }
             }
-
-
-
-
           />
 
           <div className="flex flex-col flex-wrap md:self-center mx-10 lg:mx-80">
